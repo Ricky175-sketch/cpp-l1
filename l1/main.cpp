@@ -30,6 +30,16 @@ public:
 	}
 };
 
+void outValue(int value)
+{
+	cout << value << endl;
+}
+
+void outValue()
+{
+	cout << "void" << endl;
+}
+
 int main(int argc, char* argv[])
 {
 	cout << Test()(1) << endl;
@@ -46,6 +56,10 @@ int main(int argc, char* argv[])
 
 	cout << myoper["add"](3, 2) << endl;
 	cout << myoper["del"](3, 2) << endl;
+
+	//function<void(int)> f = outValue; // ´íÎóµÄ
+	void (*func) (int) = outValue;
+	function<void(int)> f = func;
 
 	return 0;
 }
