@@ -40,7 +40,7 @@ void outValue()
 	cout << "void" << endl;
 }
 
-int main(int argc, char* argv[])
+int main1(int argc, char* argv[])
 {
 	cout << Test()(1) << endl;
 
