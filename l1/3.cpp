@@ -16,7 +16,7 @@ struct A
 };
 #pragma pack(pop)
 
-int main()
+int main3()
 {
     string s;
     A ex1;
